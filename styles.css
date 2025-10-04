@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    background-color: black;
+    color: white;
+
+}
+
+
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+a.logo {
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+
+a.logo:hover {
+    transform: scale(1.1);
+    color: gold;
+}
+
+
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.7s ease;
+    border-bottom: 3px solid transparent;
+
+    
+}
+
+nav a.active, nav a:hover {
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+
+@media(max-width: 995px) {
+    nav {
+        position: absolute;
+        display: nonef;
+        top: 0;
+        right: 100px;
+        width: 40%;
+        border-left: 3px solid #b74b4b;
+        border-bottom: 3px solid #b74b4b;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+
+    }
+    nav.active {
+        display: block;
+    }
+    nav a { 
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+
+
+    }
+   nav a.active, nav a:hover {
+       padding: 1rem;
+       border-radius: 0.5rem;
+       border-bottom: 0.5rem solid #b74b4b;
+  
+    
+    
+    
+
+
+
+     }
+
+} 
+
+
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem 9%;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+}
+
+.home .home-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+
+span {
+    color: #b74b4b;
+}
+
+.home-content h3 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+}
+
+    .home-img {
+        border-radius: 50%;
+    }
+
+.home-img img {
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+}
+
+.home-img img:hover {
+    font-size: 1.8;
+    font-weight: 700;   
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #b74b4b;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: #b74b4b;
+
+}
+
+
+
